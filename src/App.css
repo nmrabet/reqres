@@ -1,8 +1,20 @@
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .link {
-    text-decoration: none;
-    color: black;
-  }
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: brown;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

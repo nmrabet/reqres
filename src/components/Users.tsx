@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import "./users.css";
 
 export default function Users() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState<AllUsers[]>([]);
 
@@ -24,7 +23,7 @@ export default function Users() {
     <div className='list-users'>
       <h1>List of users</h1>
       <div className='users'>
-        {users.length > 0
+        {users.length > 0 
           ? users.map((user) => (
               <div key={user.id} className='user'>
                 <h4>{user.first_name + " " + user.last_name}</h4>

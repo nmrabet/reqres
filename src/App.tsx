@@ -2,9 +2,10 @@ import React from "react";
 import UserDetails from "./components/UserDetails";
 import Users from "./components/Users";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <UserDetails />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
