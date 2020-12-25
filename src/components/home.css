@@ -1,0 +1,46 @@
+.homepage {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage * {
+  margin-bottom: 0;
+}
+
+.logo {
+  color: brown;
+  text-decoration: none;
+}
+
+.sign-up {
+  color: brown;
+  vertical-align: middle;
+}
+
+li {
+  list-style-type: none;
+  font-weight: 500;
+}
+
+
+@media (min-width: 732px) {
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+  }
+  .registration {
+    display: flex;
+  }
+  li {
+    padding-left: 0.8em;
+  }
+}

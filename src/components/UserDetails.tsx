@@ -6,7 +6,7 @@ import Skeleton from "react-loading-skeleton";
 
 export default function UserDetails() {
   const params = useParams<{ userId: string }>();
-  const [userDetails, setUserDetails] = useState<User>(null);
+  const [userDetails, setUserDetails] = useState<User>()
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setIsLoading] = useState(true);
 
