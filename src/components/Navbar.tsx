@@ -2,7 +2,7 @@ import React from "react";
 import { BsDropletHalf } from "react-icons/bs";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import "./home.css";
+import "./navbar.css";
 
 export default function Navbar() {
   return (
