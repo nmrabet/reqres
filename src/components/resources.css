@@ -4,13 +4,24 @@
 }
 
 .resources-list {
-    margin: 5em auto;
+    margin: 3em auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    width: 80%;
+    width: 60%;
 }
 
 .resources-item {
+    margin: 0 auto;
+}
+
+.resource-details {
+    margin: 3em auto;
+    text-align: center;
+}
+
+.square-details {
+    min-height: 300px;
+    min-width: 300px;
     margin: 0 auto;
 }

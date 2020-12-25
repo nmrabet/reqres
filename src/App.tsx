@@ -3,6 +3,7 @@ import UserDetails from "./components/UserDetails";
 import Users from "./components/Users";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ResourceDetails from "./components/ResourceDetails";
 import Resources from "./components/Resources";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -22,6 +23,9 @@ export default function App() {
           </Route>
           <Route path='/users'>
             <Users />
+          </Route>
+          <Route path='/resources/:resourceId'>
+            <ResourceDetails />
           </Route>
           <Route>
             <Resources />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AllResources, ListUsersResponse } from "../types/index";
+import { Link } from 'react-router-dom';
 import "./resources.css";
 
 export default function Resources() {
@@ -21,10 +22,10 @@ export default function Resources() {
           return (
             <div key={resource.id} className='resources-item'>
               <h3>{resource.name}</h3>
-              <div
+              <Link to={`/resources/${resource.id}`}><div
                 className='square'
                 style={{ backgroundColor: `${resource.color}` }}
-              ></div>
+              ></div></Link>
             </div>
           );
         })}
