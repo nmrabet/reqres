@@ -16,11 +16,11 @@ export default function App() {
           <Route exact path='/'>
             <h1 className='title'>Welcome to my website</h1>
           </Route>
-          <Route path='/users'>
-            <Users />
-          </Route>
           <Route path='/users/:userId'>
             <UserDetails />
+          </Route>
+          <Route path='/users'>
+            <Users />
           </Route>
         </Switch>
         <Footer />
