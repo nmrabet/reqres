@@ -1,0 +1,20 @@
+.list-users {
+  text-align: center;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.user {
+  margin: 0 auto;
+}
+
+.user-skeleton {
+  flex-basis: 30%;
+  margin: 8px;
+  height: 200px;
+}

@@ -1,0 +1,18 @@
+.user-details {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80%;
+}
+
+.user-details-img {
+  width: 30%;
+}
+
+.user-details-item {
+  font-size: 1.3em;
+}
+
+.user-details-skeleton {
+  flex-basis: 30%;
+  height: 120px;
+}
