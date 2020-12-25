@@ -6,10 +6,10 @@ import Skeleton from "react-loading-skeleton";
 
 export default function UserDetails() {
   const params = useParams<{ userId: string }>();
-  console.log(params)
-  const [userDetails, setUserDetails] = useState<User | null>()
+  console.log(params);
+  const [userDetails, setUserDetails] = useState<User | null>();
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [, setIsLoading] = useState(true);
 
   const url = "https://reqres.in/api/users/" + params.userId;
 

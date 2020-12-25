@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./users.css";
 
 export default function Users() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [, setIsLoading] = useState(true);
   const [users, setUsers] = useState<AllUsers[]>([]);
 
   useEffect(() => {
