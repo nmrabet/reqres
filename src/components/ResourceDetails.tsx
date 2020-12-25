@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { AllResources, ListResourcesResponse } from "../types/index";
-
+import { AllResources } from "../types/index";
 
 export default function ResourceDetails() {
   const [resourceDetail, setResourceDetails] = useState<AllResources | null>();
@@ -17,13 +16,18 @@ export default function ResourceDetails() {
         setResourceDetails(data.data);
       });
   }, [url]);
-  return <div>
+  return (
+    <div>
       {resourceDetail && (
-          <div className='resource-details'>
-              <h1>{resourceDetail.name}</h1>
-              <div className='square-details' style={{backgroundColor: `${resourceDetail.color}`}}></div>
-              <h2>{resourceDetail.pantone_value}</h2>
-          </div>
+        <div className='resource-details'>
+          <h1>{resourceDetail.name}</h1>
+          <div
+            className='square-details'
+            style={{ backgroundColor: `${resourceDetail.color}` }}
+          ></div>
+          <h2>{resourceDetail.pantone_value}</h2>
+        </div>
       )}
-  </div>;
+    </div>
+  );
 }
