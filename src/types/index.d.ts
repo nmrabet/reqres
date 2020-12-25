@@ -17,3 +17,23 @@ interface ListUsersResponse {
     text: string;
   };
 }
+
+interface AllResources {
+  id: number;
+  name: string;
+  year: number;
+  color: string;
+  pantone_value: string;
+}
+
+interface ListResourcesResponse {
+  page: number;
+  per_page: number;
+  total: number;
+  total_pages: number;
+  data: [];
+  support: {
+    url: string;
+    text: string;
+  };
+}
