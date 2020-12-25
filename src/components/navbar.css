@@ -26,6 +26,14 @@ li {
   font-size: 1.1em;
 }
 
+.footer {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: brown;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
 
 @media (min-width: 732px) {
   .homepage {
@@ -43,5 +51,16 @@ li {
   }
   li {
     padding-left: 0.8em;
+  }
+  .footer {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: brown;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
