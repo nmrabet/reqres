@@ -1,5 +1,3 @@
-import { Url } from "url";
-
 export interface AllUsers {
   id: number;
   email: string;
@@ -19,4 +17,3 @@ interface ListUsersResponse {
     text: string;
   };
 }
-
