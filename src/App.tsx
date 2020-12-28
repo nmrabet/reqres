@@ -15,9 +15,7 @@ export default function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path='/'>
-            <h1 className='title'>Welcome to my website</h1>
-          </Route>
+          <Route exact path='/'></Route>
           <Route path='/users/:userId'>
             <UserDetails />
           </Route>
